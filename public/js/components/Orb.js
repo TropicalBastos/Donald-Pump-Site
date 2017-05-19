@@ -1,5 +1,8 @@
 import React from 'react';
 import {HomeOrb} from './HomeOrb.js';
+import {AppOrb} from './AppOrb.js';
+import {SourceOrb} from './SourceOrb.js';
+import {GlobalGustOrb} from './GlobalGustOrb.js';
 
 class Orb extends React.Component{
 
@@ -17,6 +20,12 @@ class Orb extends React.Component{
       );
     }else if(this.state.page==="home"){
       return(<HomeOrb />);
+    }else if(this.state.page==="app"){
+      return(<AppOrb />);
+    }else if(this.state.page==="source"){
+      return(<SourceOrb />);
+    }else if (this.state.page==="globalgust"){
+      return(<GlobalGustOrb />)
     }
   }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 var BUTTON_WIDTH = 200;
-var BUTTON_OFFSET = 107;
+var BUTTON_OFFSET = 110;
 
 class GlobalGustButton extends React.Component{
 
@@ -46,11 +46,28 @@ class GlobalGustButton extends React.Component{
       window.removeEventListener('resize', this.onResize);
   }
 
+  click(){
+    document.documentElement.style["background-color"] = "#363e45";
+    globalVar.onClickCallback("globalgust");
+  }
+
+  mouseEnter(){
+    document.getElementById("globalattach").style.backgroundImage = "url(/res/buttonattach-hover.png)";
+  }
+
+  mouseLeave(){
+    document.getElementById("globalattach").style.backgroundImage = "url(/res/buttonattach.png)";
+  }
+
   render(){
-    return(
+    return(<div>
+        <div id="globalattach" className="buttonattach"
+          style={{top:(this.state.posY-90)+"px",left:(this.state.posX+50)+"px"}}></div>
       <button style={{top:this.state.posY+"px",left:this.state.posX+"px",
       fontSize:"30px",width:BUTTON_WIDTH+"px"}}
-      className="primary-button">Global Gust</button>
+      className="primary-button" onClick={this.click}
+      onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>Global Gust</button>
+  </div>
     );
   }
 

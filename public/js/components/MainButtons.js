@@ -2,7 +2,7 @@ import React from 'react';
 import {AppButton} from './AppButton.js';
 import {GlobalGustButton} from './GlobalGustButton.js';
 import {HomeButton} from './HomeButton.js';
-import {GetButton} from './GetButton.js';
+import {SourceButton} from './SourceButton.js';
 
 class MainButtons extends React.Component{
 
@@ -12,7 +12,7 @@ class MainButtons extends React.Component{
         <AppButton />
         <GlobalGustButton />
         <HomeButton />
-        <GetButton />
+        <SourceButton />
       </div>
     );
   }

@@ -49,10 +49,22 @@ class HomeButton extends React.Component{
     globalVar.onClickCallback("home");
   }
 
+  mouseEnter(){
+    document.getElementById("homeattach").style.backgroundImage = "url(/res/buttonattach-hover.png)";
+  }
+
+  mouseLeave(){
+    document.getElementById("homeattach").style.backgroundImage = "url(/res/buttonattach.png)";
+  }
+
   render(){
-    return(
+    return(<div>
+      <div id="homeattach" className="buttonattach-inverted"
+        style={{top:(this.state.posY-90)+"px",left:(this.state.posX+60)+"px"}}></div>
       <button style={{top:this.state.posY+"px",left:this.state.posX+"px",width:BUTTON_WIDTH+"px"}}
-      className="primary-button" onClick={this.click}>Home</button>
+      className="primary-button" onClick={this.click}
+      onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>Home</button>
+  </div>
     );
   }
 

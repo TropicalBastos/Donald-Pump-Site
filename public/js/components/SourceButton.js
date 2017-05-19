@@ -3,7 +3,7 @@ import React from 'react';
 var BUTTON_WIDTH = 200;
 var BUTTON_OFFSET = 55;;
 
-class GetButton extends React.Component{
+class SourceButton extends React.Component{
 
   constructor(){
     super();
@@ -44,13 +44,30 @@ class GetButton extends React.Component{
       window.removeEventListener('resize', this.onResize);
   }
 
+  click(){
+    document.documentElement.style["background-color"] = "rgb(84, 0, 0)";
+    globalVar.onClickCallback("source");
+  }
+
+  mouseEnter(){
+    document.getElementById("sourceattach").style.backgroundImage = "url(/res/buttonattach-hover.png)";
+  }
+
+  mouseLeave(){
+    document.getElementById("sourceattach").style.backgroundImage = "url(/res/buttonattach.png)";
+  }
+
   render(){
-    return(
+    return(<div>
+      <div id="sourceattach" className="buttonattach-inverted"
+        style={{top:(this.state.posY-90)+"px",left:(this.state.posX+60)+"px"}}></div>
       <button style={{top:this.state.posY+"px",left:this.state.posX+"px",width:BUTTON_WIDTH+"px"}}
-      className="primary-button">Get It!</button>
+      className="primary-button" onClick={this.click}
+      onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>Source</button>
+  </div>
     );
   }
 
 }
 
-export{GetButton};
+export{SourceButton};
