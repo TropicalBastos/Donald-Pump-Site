@@ -4,6 +4,7 @@ var PORT = 8001;
 var app = express();
 
 app.use(express.static(__dirname+"/public"));
+app.use(express.static(__dirname+"/node_modules/particles.js/"));
 app.set("views",__dirname+"/views");
 app.engine("html",require("ejs").renderFile);
 app.set("view engine","ejs");

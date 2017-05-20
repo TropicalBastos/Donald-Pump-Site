@@ -66,7 +66,7 @@ class GlobalGustButton extends React.Component{
 
     document.getElementById("global-button").classList.add("active-button");
     document.getElementById("globalattach").style.backgroundImage = "url(/res/buttonattach-hover.png)";
-    document.documentElement.style["background-color"] = "#363e45";
+    document.documentElement.style["background-color"] = "#13334e";
     globalVar.onClickCallback("globalgust");
   }
 

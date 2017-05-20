@@ -66,7 +66,7 @@ class AppButton extends React.Component{
 
     document.getElementById("app-button").classList.add("active-button");
     document.getElementById("appattach").style.backgroundImage = "url(/res/buttonattach-hover.png)";
-    document.documentElement.style["background-color"] = "#363e45";
+    document.documentElement.style["background-color"] = "#13334e";
     globalVar.onClickCallback("app");
   }
 
