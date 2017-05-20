@@ -47,6 +47,25 @@ class AppButton extends React.Component{
   }
 
   click(){
+    var actives = document.getElementsByClassName("active-button");
+
+    Array.prototype.forEach.call(actives,(el,i)=>{
+      el.classList.remove("active-button");
+    });
+
+    var hovers = document.getElementsByClassName("buttonattach");
+    var hoversInverted = document.getElementsByClassName("buttonattach-inverted");
+
+    Array.prototype.forEach.call(hovers,(el,i)=>{
+      el.style.backgroundImage = "url(/res/buttonattach.png)";
+    });
+
+    Array.prototype.forEach.call(hoversInverted,(el,i)=>{
+      el.style.backgroundImage = "url(/res/buttonattach.png)";
+    });
+
+    document.getElementById("app-button").classList.add("active-button");
+    document.getElementById("appattach").style.backgroundImage = "url(/res/buttonattach-hover.png)";
     document.documentElement.style["background-color"] = "#363e45";
     globalVar.onClickCallback("app");
   }
@@ -56,14 +75,15 @@ class AppButton extends React.Component{
   }
 
   mouseLeave(){
-    document.getElementById("appattach").style.backgroundImage = "url(/res/buttonattach.png)";
+    if(document.getElementById("app-button").className.indexOf("active-button")===-1)
+      document.getElementById("appattach").style.backgroundImage = "url(/res/buttonattach.png)";
   }
 
   render(){
     return(<div>
       <div id="appattach" className="buttonattach"
       style={{top:(this.state.posY-90)+"px",left:(this.state.posX+60)+"px"}}></div>
-      <button style={{top:this.state.posY+"px",left:this.state.posX+"px",width:BUTTON_WIDTH+"px"}}
+    <button id="app-button" style={{top:this.state.posY+"px",left:this.state.posX+"px",width:BUTTON_WIDTH+"px"}}
       className="primary-button" onClick={this.click} onMouseEnter={this.mouseEnter}
        onMouseLeave={this.mouseLeave}>The App</button>
   </div>

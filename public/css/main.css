@@ -92,6 +92,11 @@ body{
   transition: all .2s ease-out;
 }
 
+.primary-button.active-button{
+  background-color: red;
+  color: white;
+}
+
 .buttonattach{
   position: absolute;
   background: url(../res/buttonattach.png);
@@ -229,4 +234,36 @@ body{
   top: -25px;
   transform: rotate(-14deg);
   transition: all 1s;
+}
+
+.footer-wrapper{
+  position: absolute;
+  background-color: white;
+  opacity: 0.8;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  opacity: 0.5;
+}
+
+#footer{
+  position: absolute;
+  width: 300px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  top: 20px;
+}
+
+.secondary-button{
+  float: left;
+  color: black;
+  font-family: 'Jim';
+  width: 150px;
+  font-size: 18px;
+  text-align: center;
+}
+.secondary-button>p:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
