@@ -25,6 +25,25 @@
   <div id="buttoncontainer">
   </div>
 
+  <div id="about-div">
+    <img id="acb" class="close-button" src="/res/close.png"/>
+    <h1>About</h1>
+    <p>
+      This site is intended to promote the new addictive mobile game Donald Pump.
+      This is the app's official site and uses no cookies nor does it take or use any personal
+      information.
+    </p>
+    <script>
+      function closeAbout(){
+        var element = document.getElementById("about-div");
+        element.classList.remove("popin");
+        setTimeout(function(){element.style.display = "none";},500);
+        MODAL = false;
+      }
+      document.getElementById("acb").addEventListener("click",closeAbout);
+    </script>
+  </div>
+
   <footer class="footer-wrapper">
     <div id="footer">
     </div>

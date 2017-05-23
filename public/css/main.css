@@ -279,6 +279,47 @@ body{
   height: 100%;
 }
 
+#about-div{
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: auto;
+  background-color: #382727;
+  text-align: center;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  top: 350px;
+  z-index: 1000;
+  color: white;
+  padding: 30px;
+  border: solid 1px white;
+  border-radius: 4px;
+  /**Pre popin condition transform**/
+  transform: translateY(400px) scale(0,0);
+  transition: all .5s;
+}
+#about-div>h1{
+  font-family: 'Jim';
+  font-size: 24px;
+}
+#about-div>p{
+  font-family: 'Open Sans';
+  font-size: 18px;
+}
+#about-div>.close-button{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#about-div.popin{
+  transform: translateY(0px) scale(1,1);
+  transition: all .5s;
+}
+
 @media screen and (max-width:800px){
 
   html{

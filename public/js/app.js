@@ -8,7 +8,10 @@ import {loadParticles} from './particles.js';
 
 runCanvas();
 loadParticles();
+//global var that is used by components to fire events from other components
 window.globalVar = {};
+//global bool that tests if a modal is already open
+window.MODAL = false;
 
 ReactDOM.render(<Orb />,document.getElementById("maincontentwrapper"));
 ReactDOM.render(<MainButtons />,document.getElementById("buttoncontainer"));
