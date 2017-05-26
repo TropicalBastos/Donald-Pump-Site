@@ -45,6 +45,25 @@
     </script>
   </div>
 
+  <div id="contact-div">
+    <img id="ccb" class="close-button" src="/res/close.png"/>
+    <h1>Contact</h1>
+    <p>
+      For support, issues or anything of relevance contact me
+      at donaldpumped@gmail.com.
+    </p>
+    <script>
+    //Check About.js component for info on how the component controls this modal
+      function closeContact(){
+        var element = document.getElementById("contact-div");
+        element.classList.remove("popin");
+        setTimeout(function(){element.style.display = "none";},500);
+        MODAL = false;
+      }
+      document.getElementById("ccb").addEventListener("click",closeContact);
+    </script>
+  </div>
+
   <footer class="footer-wrapper">
     <div id="footer">
     </div>

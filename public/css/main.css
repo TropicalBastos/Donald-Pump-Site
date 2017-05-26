@@ -49,12 +49,18 @@ body{
   max-width: 100%;
   height: 500px;
   margin: 0 auto;
-  clip-path: circle(49% at 50% 50%);
   transform: scale(0,0);
   animation: bounce 2s ease;
   animation-fill-mode: forwards;
   z-index: 2;
   text-align:center;
+  border-radius: 50%;
+  overflow: hidden;
+  clip-path: circle(49% at 50% 50%);
+}
+
+.clipped img{
+
 }
 
 @keyframes bounce{
@@ -320,14 +326,71 @@ body{
   transition: all .5s;
 }
 
+#contact-div{
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: auto;
+  background-color: #382727;
+  text-align: center;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  top: 350px;
+  z-index: 1000;
+  color: white;
+  padding: 30px;
+  border: solid 1px white;
+  border-radius: 4px;
+  /**Pre popin condition transform**/
+  transform: translateY(400px) scale(0,0);
+  transition: all .5s;
+}
+#contact-div>h1{
+  font-family: 'Jim';
+  font-size: 24px;
+}
+#contact-div>p{
+  font-family: 'Open Sans';
+  font-size: 18px;
+}
+#contact-div>.close-button{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#contact-div.popin{
+  transform: translateY(0px) scale(1,1);
+}
+
+
 @media screen and (max-height:800px){
 
-  #maincontentwrapper{;
+  .title-wrapper{
+    transform: scale(0.8);
+  }
+
+  #maincontentwrapper{
     transform: scale(0.8);
   }
 
   #buttoncontainer{
     transform: scale(0.8);
+  }
+
+  #footer{
+    transform: scale(0.8);
+  }
+
+  #about-div{
+    top: 200px;
+  }
+
+  #contact-div{
+    top: 200px;
   }
 
 }
