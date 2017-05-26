@@ -322,16 +322,32 @@ body{
 
 @media screen and (max-height:800px){
 
-  html{
-    zoom: 0.8;
+  #maincontentwrapper{;
+    transform: scale(0.8);
+  }
+
+  #buttoncontainer{
+    transform: scale(0.8);
   }
 
 }
 
 @media screen and (max-width:800px){
 
-  html{
-    zoom: 0.6;
+  .title-wrapper{
+    transform: scale(0.6);
+  }
+
+  #maincontentwrapper{;
+    transform: scale(0.6);
+  }
+
+  #buttoncontainer{
+    transform: scale(0.6);
+  }
+
+  #footer{
+    transform: scale(0.6);
   }
 
 }
