@@ -516,3 +516,21 @@ body{
   }
 
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+
+  .footer-wrapper{
+    bottom: auto;
+  }
+
+  .app-desc{
+    font-size: 18px;
+  }
+
+  .gust-container{
+    font-size: 18px;
+    position: relative;
+    top: -5px;;
+  }
+
+}
