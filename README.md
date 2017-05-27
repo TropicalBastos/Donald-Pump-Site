@@ -5,6 +5,8 @@ Official repository for the Donald Pump App website
 
 However the website will always remain open source.
 <br><br>
+The website is built on NodeJs to serve the static files and based on React on the front end
+<br><br>
 Feel free to contribute of course
 <br><br>
 Heres a screenshot of the center orb div:
