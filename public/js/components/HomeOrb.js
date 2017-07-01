@@ -14,7 +14,7 @@ class HomeOrb extends React.Component{
               <div className="homedesc-container">
                 <p className="home-desc">Welcome to the official site for the Donald Pump mobile
                 app!</p>
-                <p className="home-desc">Soon to be available on iOS, Android and Windows phone on the 4th of July 2017</p>
+                <p className="home-desc">Soon to be available on iOS, Android and Windows phone in August 2017</p>
               </div>
               <img src="res/plane.png" className="home-plane"/>
            </div>
