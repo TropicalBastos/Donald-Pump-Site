@@ -430,17 +430,17 @@ body{
 
   .title-wrapper{
     transform: scale(0.5);
-    transform-origin: 45vw 0;
+    transform-origin: 50vw 0;
   }
 
   #maincontentwrapper{;
     transform: scale(0.5);
-    transform-origin: 42vw 0;
+    transform-origin: 51vw 0;
   }
 
   #buttoncontainer{
     transform: scale(0.5);
-    transform-origin: 42vw 0;
+    transform-origin: 51vw 0;
   }
 
   #footer{
