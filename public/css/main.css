@@ -450,6 +450,20 @@ body{
 
 }
 
+@media screen and (max-width: 450px){
+  #buttoncontainer{
+    transform-origin: 39vw 0;
+  }
+  #maincontentwrapper{;
+    transform: scale(0.5);
+    transform-origin: 39vw 0;
+  }
+  .title-wrapper{
+    transform: scale(0.5);
+    transform-origin: 49vw 0;
+  }
+}
+
 @media screen and (max-width:400px){
 
   .title-wrapper{
