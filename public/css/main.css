@@ -57,6 +57,7 @@ body{
   clip-path: url(#clipContent);
   -ms-clip-path: url(#clipContent);
   -webkit-clip-path: url(#clipContent);
+  clip-path: circle(49% at 50% 50%);
 }
 
 .clipped img{
@@ -78,6 +79,7 @@ body{
 .clippedcanvas{
   width:500px;
   height:500px;
+  clip-path: circle(49% at 50% 50%);
 }
 
 .primary-button{
