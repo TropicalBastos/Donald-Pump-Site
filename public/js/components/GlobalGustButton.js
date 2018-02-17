@@ -86,7 +86,7 @@ class GlobalGustButton extends React.Component{
         <button id="global-button" style={{top:this.state.posY+"px",left:this.state.posX+"px",
       fontSize:"30px",width:BUTTON_WIDTH+"px"}}
       className="primary-button" onClick={this.click}
-      onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>Global Gust</button>
+      onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>News Letter</button>
   </div>
     );
   }

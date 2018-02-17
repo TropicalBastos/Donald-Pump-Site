@@ -328,6 +328,55 @@ body{
   transition: all .5s;
 }
 
+#global-button{
+  text-align: right;
+}
+
+.central-modal{
+  font-size: 35px;
+  position: absolute;
+  z-index: 99999999999;
+  top: 40%;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  padding: 8px;
+  display: block;
+  background: #13334d;
+  width: 200px;
+}
+
+.error.central-modal{
+  color: tomato;
+}
+
+.success.central-modal{
+  color: white;
+}
+
+button.nsubscribe{
+    padding: 15px;
+    margin-top: 10px;
+    height: auto;
+    height: auto;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #213e57;
+    border: 0;
+    font-weight: bold;
+}
+
+input.newsletter{
+  width: 240px;
+  height: 40px;
+  font-size: 24px;
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
 #contact-div{
   display: none;
   position: absolute;
@@ -550,4 +599,44 @@ body{
     top: -5px;;
   }
 
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
