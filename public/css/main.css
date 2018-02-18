@@ -406,7 +406,7 @@ input.newsletter{
   font-size: 25px;
   border: 0;
   display: block;
-  width: 140px;
+  width: auto;
   background-color: #213e57;
   color: white;
   font-weight: bold;
