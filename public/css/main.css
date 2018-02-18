@@ -377,6 +377,42 @@ input.newsletter{
   margin-top: 40px;
 }
 
+.auth{
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  background: #8d9ba8;
+  height: auto;
+  margin-top: 20vh;
+  padding: 8px;
+}
+
+.auth p{
+  text-align: center;
+  color: #881500;
+}
+
+.auth input{
+  width: 90%;
+  margin: 10px auto;
+  font-size: 22px;
+  height: 36px;
+  display: block;
+}
+
+.auth button{
+  margin: 10px auto;
+  height: 36px;
+  font-size: 25px;
+  border: 0;
+  display: block;
+  width: 140px;
+  background-color: #213e57;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 #contact-div{
   display: none;
   position: absolute;
