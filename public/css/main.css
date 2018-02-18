@@ -453,6 +453,10 @@ input.newsletter{
   transform: translateY(0px) scale(1,1);
 }
 
+.gust-container > p:nth-child(1){
+  font-size: 18px;
+}
+
 @media screen and (max-height:400px){
 
   #maincontentwrapper{
