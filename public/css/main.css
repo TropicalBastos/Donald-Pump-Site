@@ -454,7 +454,7 @@ input.newsletter{
 }
 
 .gust-container > p:nth-child(1){
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (max-height:400px){
