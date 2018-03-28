@@ -41,6 +41,15 @@ body{
   color: gold;
 }
 
+.google-badge{
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  display: block;
+}
+
+.home-plane{ display: none; }
+
 .clipped{
   position: absolute;
   left:0;
@@ -365,6 +374,7 @@ button.nsubscribe{
     background-color: #213e57;
     border: 0;
     font-weight: bold;
+    cursor: pointer;
 }
 
 input.newsletter{

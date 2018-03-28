@@ -14,7 +14,7 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({mangle: false,sourcemap: false})
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js?$/,
         exclude: /(node_modules|bower_components)/,
